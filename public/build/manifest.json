@@ -1,0 +1,19 @@
+{
+  "resources/react/src/main.css": {
+    "file": "assets/main-d526a0c5.css",
+    "src": "resources/react/src/main.css"
+  },
+  "resources/react/src/main.tsx": {
+    "css": [
+      "assets/main-d526a0c5.css"
+    ],
+    "file": "assets/main-80644760.js",
+    "isEntry": true,
+    "src": "resources/react/src/main.tsx"
+  },
+  "resources/sass/app.scss": {
+    "file": "assets/app-8c805d63.css",
+    "isEntry": true,
+    "src": "resources/sass/app.scss"
+  }
+}
