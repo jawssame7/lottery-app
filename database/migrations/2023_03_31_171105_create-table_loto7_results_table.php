@@ -10,6 +10,8 @@ return new class extends Migration {
      */
     public function up(): void
     {
+        Schema::drop('loto7_results');
+        
         Schema::create('loto7_results', function (Blueprint $table) {
             //
             $table->id();
