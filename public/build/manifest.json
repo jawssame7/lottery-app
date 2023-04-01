@@ -1,15 +1,8 @@
 {
-  "resources/react/src/main.css": {
-    "file": "assets/main-d526a0c5.css",
-    "src": "resources/react/src/main.css"
-  },
-  "resources/react/src/main.tsx": {
-    "css": [
-      "assets/main-d526a0c5.css"
-    ],
-    "file": "assets/main-80644760.js",
+  "resources/react/src/index.tsx": {
+    "file": "assets/index-f44b976c.js",
     "isEntry": true,
-    "src": "resources/react/src/main.tsx"
+    "src": "resources/react/src/index.tsx"
   },
   "resources/sass/app.scss": {
     "file": "assets/app-8c805d63.css",
