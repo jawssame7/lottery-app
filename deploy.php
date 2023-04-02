@@ -12,12 +12,23 @@ add('shared_dirs', []);
 add('writable_dirs', []);
 
 // Hosts
+import(__DIR__ . '/hosts.yaml');
 
-host('conoha-deployer')
-    ->set('remote_user', 'deployer')
-    ->set('deploy_path', '~/workspace/lottery-app')
-    ->set('branch', 'master')
-    ->set('writable_mode', 'chmod');
+//host('conoha-deployer')
+//    ->setLabels([
+//        'env' => 'prod'
+//    ])
+//    ->set('remote_user', 'deployer')
+//    ->set('deploy_path', '~/workspace/lottery-app')
+//    ->set('branch', 'master')
+//    ->set('writable_mode', 'chmod');
+
+// front build
+task('build', function () {
+    cd('{{release_path}}');
+    run('npm install');
+    run('npm run build');
+});
 
 // Hooks
 
