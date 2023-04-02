@@ -1,5 +1,6 @@
 hosts:
-  conoha-deployer:
+  next-hundred:
+    hostname: conoha-deployer
     remote_user: deployer
     deploy_path: ~/workspace/lottery-app
     branch: master

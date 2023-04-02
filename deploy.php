@@ -23,13 +23,14 @@ import(__DIR__ . '/hosts.yaml');
 //    ->set('branch', 'master')
 //    ->set('writable_mode', 'chmod');
 
-// front build
-task('build', function () {
+// front build task
+task('deploy:front-build', function () {
     cd('{{release_path}}');
     run('npm install');
     run('npm run build');
 });
 
 // Hooks
+after('deploy:update_code', 'deploy:front-build');
 
 after('deploy:failed', 'deploy:unlock');
