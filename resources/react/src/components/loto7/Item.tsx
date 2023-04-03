@@ -6,7 +6,7 @@ export const Item = ({loto7}: { loto7: Loto7 }) => {
 
     return (
         <>
-            <div>開催回:{loto7.times} 開催日:{format(new Date(loto7.event_date), 'yyyy/MM/dd')}</div>
+            <div className={'event-info'}>開催回:{loto7.times} 開催日:{format(new Date(loto7.event_date), 'yyyy/MM/dd')}</div>
             <Numbers perNums={[loto7.per_number_1,
                 loto7.per_number_2,
                 loto7.per_number_3,

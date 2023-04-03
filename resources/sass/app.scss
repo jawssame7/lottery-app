@@ -7,6 +7,10 @@
     }
 }
 
+.event-info-display-button-wrap {
+    padding-top: 15px;
+}
+
 ul.loto-list {
     padding-inline-start: 5px;
 
@@ -25,6 +29,10 @@ ul.loto-list {
         width: 20px;
         text-align: right;
 
+        &.event-info {
+
+        }
+
         &.per_number {
             color: red;
         }
@@ -33,5 +41,9 @@ ul.loto-list {
             color: blue;
         }
     }
+}
+
+.hidden {
+    display: none;
 }
 
