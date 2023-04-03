@@ -30,7 +30,14 @@ task('deploy:front-build', function () {
     run('npm run build');
 });
 
+//
+task('deploy:storage-chmod', function () {
+    cd('{{release_path}}');
+    run('sudo chmod 777 -R ./storage');
+});
+
 // Hooks
 after('deploy:update_code', 'deploy:front-build');
+after('deploy:symlink', 'deploy:storage-chmod');
 
 after('deploy:failed', 'deploy:unlock');
