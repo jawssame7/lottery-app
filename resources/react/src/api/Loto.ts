@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const loto6ListUrl = '/api/loto6';
-const loto7ListUrl = '/api/loto7';
-const minilotoListUrl = '/api/miniloto';
+const loto6ListUrl = "/api/loto6";
+const loto7ListUrl = "/api/loto7";
+const minilotoListUrl = "/api/miniloto";
 
 /**
  *

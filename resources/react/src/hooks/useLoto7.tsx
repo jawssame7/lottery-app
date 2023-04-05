@@ -1,9 +1,8 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import * as lotoData from "../api/Loto";
-import {Loto7} from "../types/Loto7";
+import { Loto7 } from "../types/Loto7";
 
 export const useLoto7 = () => {
-
     const [loto7List, setLoto7List] = useState<Loto7[]>([]);
 
     useEffect(() => {
@@ -14,5 +13,5 @@ export const useLoto7 = () => {
     }, []);
 
     // 作成した関数を返す
-    return {loto7List};
-}
+    return { loto7List };
+};

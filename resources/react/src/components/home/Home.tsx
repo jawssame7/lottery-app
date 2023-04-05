@@ -1,9 +1,7 @@
 import Navbar from "../header/Navbar";
 
 const Home = () => {
-    return (
-        <Navbar/>
-    );
-}
+    return <Navbar />;
+};
 
 export default Home;
