@@ -20,7 +20,7 @@ export const Item = ({ loto7 }: { loto7: Loto7 }) => {
                     loto7.per_number_7,
                 ]}
                 bonusNums={[loto7.bonus_number_1, loto7.bonus_number_2]}
-                maxNum={43}
+                maxNum={37}
             />
         </>
     );
